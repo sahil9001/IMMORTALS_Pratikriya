@@ -3,12 +3,27 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 from rest_framework.authtoken.models import Token
 from django.contrib.auth import authenticate
+from drf_yasg.utils import swagger_auto_schema
+#from utils.swagger import set_example
 from .models import User
 from .serializers import *
+from . import responses
 
 
 class LoginAPIView(APIView):
     serializer_class = LoginSerializer
+
+    @swagger_auto_schema(
+        operation_id='login_user',
+        request_body=LoginSerializer,
+        responses={
+  #          '202': set_example(responses.login_202),
+  #          '400': set_example(responses.login_400),
+  #          '401': set_example(responses.login_401),
+  #          '404': set_example(responses.login_404)
+        },
+    
+    )
 
     def post(self, request):
         serializer = LoginSerializer(data=request.data)

@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'users',
     'calls',
     'rest_framework.authtoken',
+    'drf_yasg',
 ]
 
 MIDDLEWARE = [
