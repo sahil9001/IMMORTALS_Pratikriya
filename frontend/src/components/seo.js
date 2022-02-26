@@ -2,10 +2,10 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'startup landing descriptions',
-  author = 'RedQ, Inc',
+  description = 'Voice Analysis of call in Emergency Response System',
+  author = 'Immortals',
   meta,
-  title = 'startup landing title',
+  title = 'Pratikriya',
 }) {
   const metaData = [
     {
@@ -44,6 +44,7 @@ export default function SEO({
   return (
     <Head>
       <title>{title}</title>
+      <link rel='icon' href='/logo.png'></link>
       {metaData.map(({ name, content }, i) => (
         <meta key={i} name={name} content={content} />
       ))}

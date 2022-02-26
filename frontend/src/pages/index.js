@@ -18,7 +18,7 @@ export default function IndexPage() {
       <Layout>
         <SEO
           title="Pratikriya"
-          description="Audio Sentiment Analysis"
+          description="Voice Analysis of call in Emergency Response System"
         />
         <Banner />
         <Support />
