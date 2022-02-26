@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "CI=false && next build",
     "serve": "next start",
     "export": "next export",
     "postbuild": "next-sitemap"
