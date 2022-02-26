@@ -8,14 +8,14 @@ const data = [
   {
     id: 1,
     icon: support,
-    title: 'Do you need help support',
-    description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
+    title: 'Do you need emergency support?',
+    description: `Tap here and our personnel will get in touch with you`,
   },
   {
     id: 2,
     icon: support,
-    title: 'Do you need help support',
-    description: `Get your website ads tests delivered at let collect sample from the victory of the update managements services.`,
+    title: 'Wanna talk to ERS personal?',
+    description: `Tap here and we will connext you to one of our executives`,
   },
 ];
 

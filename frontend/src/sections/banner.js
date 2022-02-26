@@ -30,15 +30,13 @@ const Banner = () => {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1">
-              Ultimate support system for leading agencies
+              Pratikriya
             </Heading>
             <Text as="p">
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever.
+            Voice Analysis of call in Emergency Response System
             </Text>
             <SubscriptionForm sx={styles.subscriptionForm} />
-            <Flex sx={styles.sponsoredBy}>
+            {/* <Flex sx={styles.sponsoredBy}>
               <Text as="span">Sponsored by:</Text>
               <Flex sx={styles.sponsor}>
                 {logos?.map((logo, index) => (
@@ -47,7 +45,7 @@ const Banner = () => {
                   </Flex>
                 ))}
               </Flex>
-            </Flex>
+            </Flex> */}
           </Box>
           <Flex as="figure" sx={styles.bannerImage}>
             <Image src={illustration} alt="illustration" />
