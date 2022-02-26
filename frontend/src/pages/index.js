@@ -22,11 +22,11 @@ export default function IndexPage() {
         />
         <Banner />
         <Support />
-        <PremiumFeature />
+        {/* <PremiumFeature />
         <AppFeature />
         <Dashboard />
         <Pricing />
-        <Testimonials />
+        <Testimonials /> */}
         <Subscribe />
       </Layout>
     </ThemeProvider>

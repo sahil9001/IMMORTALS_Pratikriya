@@ -1,4 +1,3 @@
-import lock from 'assets/images/icons/lock.png';
 export default [
   {
     path: 'home',
@@ -8,16 +7,16 @@ export default [
     path: 'support',
     label: 'B',
   },
-  {
-    path: 'features',
-    label: 'C',
-  },
-  {
-    path: 'pricing',
-    label: 'D',
-  },
-  {
-    path: 'testimonials',
-    label: 'E',
-  },
+  // {
+  //   path: 'features',
+  //   label: 'Feature',
+  // },
+  // {
+  //   path: 'pricing',
+  //   label: 'Pricing',
+  // },
+  // {
+  //   path: 'testimonials',
+  //   label: 'Testimonials',
+  // },
 ];
