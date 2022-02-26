@@ -1,5 +1,9 @@
 # Pratikriya
 
+<p align="center">
+    <img src="./frontend/src/assets/images/Pratikriya-logos.jpeg" alt="Logo" width="300">
+  </a>
+
 ## Problem Statement
 
 ## Solution
