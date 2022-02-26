@@ -23,7 +23,7 @@ function Login() {
            </div>
            <div className="second-input">
              <img src={pass} alt="pass" className="email"/>
-             <input type="password" placeholder="password" className="name"/>
+             <input className='input' type="password" placeholder="password" className="name"/>
            </div>
           <div className="login-button">
           <button>Login</button>

@@ -12,9 +12,12 @@ import Team from 'sections/team';
 import Testimonials from 'sections/testimonials';
 import Subscribe from 'sections/subscribe';
 import Login from 'components/authPages/login';
+import AudioUpload from 'components/dashboard/audioUpload'; 
+
 export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
+      {/* <AudioUpload/> */}
       {/* <Login /> */}
       <Layout>
         <SEO
