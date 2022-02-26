@@ -11,10 +11,11 @@ import Dashboard from 'sections/dashboard';
 import Team from 'sections/team';
 import Testimonials from 'sections/testimonials';
 import Subscribe from 'sections/subscribe';
-
-export default function IndexPage () {
+import Login from 'components/authPages/login';
+export default function IndexPage() {
   return (
     <ThemeProvider theme={theme}>
+      {/* <Login /> */}
       <Layout>
         <SEO
           title="Pratikriya"
