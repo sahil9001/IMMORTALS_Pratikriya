@@ -5,7 +5,7 @@ import { Link } from 'react-scroll';
 import { rgba } from 'polished';
 import { DrawerContext } from 'contexts/drawer/drawer-context';
 import Drawer from 'components/drawer';
-import Logo from 'components/logo';
+import logo from 'assets/images/logos/logo_black.png';
 import menuItems from './header.data';
 import close from 'assets/images/icons/close.png';
 
@@ -40,7 +40,7 @@ const NavbarDrawer = () => {
       closeBtnStyle={styles.close}
     >
       <Box sx={styles.wrapper}>
-        <Logo sx={styles.logo} />
+      <Image src={logo} sx={styles.logo} width="100px" height="100px"/>
         <Box as="ul" sx={styles.navbar}>
           {menuItems.map(({ path, label }, i) => (
             <Box as="li" key={i}>

@@ -2,8 +2,8 @@
 import { jsx, Flex, Box, Text, Container } from 'theme-ui';
 import { rgba } from 'polished';
 import { Link } from 'components/link';
-import Logo from 'components/logo';
-
+import logo from 'assets/images/logos/logo_white.png';
+import Image from 'components/image';
 const menuItems = [
   {
     path: '#home',
@@ -33,9 +33,9 @@ export default function Footer() {
       <Container>
         <Flex sx={styles.footerInner}>
           <Flex sx={styles.copyright}>
-            <Logo isWhite />
+          <Image src={logo} sx={styles.logo} width="100px" height="100px"/>
             <Text as="span">
-              &copy; Copyright by {new Date().getFullYear()} RedQ, Inc
+              &copy; Copyright by {new Date().getFullYear()} Immortals
             </Text>
           </Flex>
           <Flex as="ul" sx={styles.footerNav}>

@@ -5,12 +5,11 @@ import { useState } from 'react';
 import { DrawerProvider } from 'contexts/drawer/drawer-provider';
 import NavbarDrawer from './navbar-drawer';
 import Image from 'components/image';
-import Logo from 'components/logo';
 import { NavLink } from 'components/link';
 
 import menuItems from './header.data';
 import lock from 'assets/images/icons/lock.png';
-
+import logo from 'assets/images/logos/logo_black.png';
 export default function Header() {
   const [state, setState] = useState({
     isMobileMenu: false,
@@ -34,7 +33,7 @@ export default function Header() {
           >
             <Container>
               <Box sx={styles.headerInner}>
-                <Logo sx={styles.logo} isSticky={state.isSticky} />
+                <Image src={logo} sx={styles.logo} width="100px" height="100px"/>
                 <Flex
                   as="nav"
                   sx={styles.navbar}
