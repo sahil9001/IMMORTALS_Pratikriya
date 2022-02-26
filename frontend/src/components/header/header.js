@@ -56,10 +56,10 @@ export default function Header() {
                   </Box>
                 </Flex>
                 <Flex sx={styles.buttonGroup}>
-                  <button sx={styles.login}>
+                  <Button sx={styles.login}>
                     <Image src={lock} alt="lock icon" />
                     Login
-                  </button>
+                  </Button>
                   <Button variant="text" sx={styles.getStarted}>
                     Get Started
                   </Button>

@@ -6,18 +6,18 @@ export default [
   },
   {
     path: 'support',
-    label: 'Support',
+    label: 'B',
   },
   {
     path: 'features',
-    label: 'Feature',
+    label: 'C',
   },
   {
     path: 'pricing',
-    label: 'Pricing',
+    label: 'D',
   },
   {
     path: 'testimonials',
-    label: 'Testimonials',
+    label: 'E',
   },
 ];
