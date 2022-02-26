@@ -8,11 +8,11 @@ import Support from 'sections/support';
 import PremiumFeature from 'sections/premium-feature';
 import AppFeature from 'sections/app-feature';
 import Dashboard from 'sections/dashboard';
-import Pricing from 'sections/pricing';
+import Team from 'sections/team';
 import Testimonials from 'sections/testimonials';
 import Subscribe from 'sections/subscribe';
 
-export default function IndexPage() {
+export default function IndexPage () {
   return (
     <ThemeProvider theme={theme}>
       <Layout>
@@ -27,6 +27,7 @@ export default function IndexPage() {
         <Dashboard />
         <Pricing />
         <Testimonials /> */}
+        <Team />
         <Subscribe />
       </Layout>
     </ThemeProvider>

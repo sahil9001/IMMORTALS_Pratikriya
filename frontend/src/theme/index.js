@@ -115,6 +115,34 @@ export default {
   section: {
     banner: {},
   },
+  sectionHeader: {
+    width: ['100%', null, '540px'],
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    mt: ['-3px', null, -1],
+    marginBottom: ['50px', null, '60px', null, null, '65px', null, '80px'],
+    mx: 'auto',
+    title: {
+      fontSize: ['24px', null, '28px', null, null, '32px', null, '36px'],
+      color: 'heading',
+      lineHeight: [1.3, null, null, 1.25],
+      textAlign: 'center',
+      fontWeight: '700',
+      letterSpacing: '-.5px',
+    },
+
+    subTitle: {
+      fontSize: [0, '13px', null, '14px'],
+      color: 'primary',
+      textAlign: 'center',
+      letterSpacing: ['1.5px', null, '2px'],
+      textTransform: 'uppercase',
+      fontWeight: '700',
+      mb: 2,
+      lineHeight: 1.5,
+    },
+  },
   text: {
     heading: {
       fontFamily: 'heading',
