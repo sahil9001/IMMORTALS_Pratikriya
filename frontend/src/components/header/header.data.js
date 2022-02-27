@@ -5,7 +5,7 @@ export default [
   },
   {
     path: 'support',
-    label: 'B',
+    label: 'Support',
   },
   {
     path: 'team',
