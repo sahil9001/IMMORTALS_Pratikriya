@@ -8,6 +8,9 @@ const Dashboard = () => {
   const [caller, setCaller] = useState(null);
   return (
     <Box>
+    <button><a href="http://localhost:3001" target="_blank">
+                    Audio Upload</a>
+                  </button>
       <Flex
         className="audiolist"
         sx={{
