@@ -14,8 +14,8 @@ const data = [
   {
     id: 2,
     icon: support,
-    title: 'Wanna talk to ERS personal?',
-    description: `Tap here and we will connext you to one of our executives`,
+    title: 'Video/Audio Call the customer?',
+    description: `Tap here and we will connect you to the customer`,
   },
 ];
 
