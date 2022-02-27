@@ -9,6 +9,8 @@ const Dashboard = () => {
   return (
     <Box>
       <button style={{marginLeft:"600px", marginTop:"50px"}}><a style={{textDecoration:"none"}} href="http://localhost:3001">
+
+
                     Audio Upload</a>
                   </button>
       <Flex
@@ -87,7 +89,7 @@ const Dashboard = () => {
                   <div className="label" style={{ gridArea: "fpred" }}>
                     Final Prediction :
                   </div>
-                  <div className="label-value" style={{ gridArea: "fpredval" }}>
+                  <div className="label-value" style={{ gridArea: "fpredval", marginLeft:'-135px', marginTop:'-25px'}}>
                     {caller.prediction}
                   </div>
                 </div>

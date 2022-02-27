@@ -21,6 +21,7 @@ const data = [
 
 const Support = () => {
   return (
+    <a href="https://morning-escarpment-67980.herokuapp.com/" target="_blank">
     <Box as="section" id="support" sx={styles.section}>
       <Container>
         <Grid sx={styles.grid}>
@@ -40,6 +41,7 @@ const Support = () => {
         </Grid>
       </Container>
     </Box>
+    </a>
   );
 };
 

@@ -48,7 +48,9 @@ export default function Header() {
                     sx={styles.navList}
                     className={state.isMobileMenu ? 'active' : ''}
                   >
-                    {menuItems.map(({ path, label }, i) => (
+                    {menuItems.map(({ path, label }, i) => {
+                      if(label!="MindSpace")
+                      return(
                       <li key={i}>
                         <NavLink
                           path={path}
@@ -56,7 +58,18 @@ export default function Header() {
                           onClick={handleCloseMenu}
                         />
                       </li>
-                    ))}
+                    )
+                    else 
+                    return(
+                      <li key={i}>
+                        <a href="https://sakshi300699.github.io/MindSpace/" target="_blank">
+                        <Button>
+                    MindSpace
+                  </Button>
+                        </a>
+                      </li>
+                    )
+                    })}
                   </Box>
                 </Flex>
                 <Flex sx={styles.buttonGroup}>
