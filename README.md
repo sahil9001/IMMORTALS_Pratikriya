@@ -21,6 +21,7 @@ We've developed the ***voice analyser*** using **Machine Learning**, and ***main
 |----------------|-----------|---------|
 |Blockchain| Ethereum, Ganache, Truffle, Metamask, Infura, IPFS | The audio data is stored in IPFS Storage. This IPFS Hash is maintained in the Ethereum Blockchain along with other header information such as user, caller, emotion etc. |
 |Front-End| Next.js, Theme UI | This built the web application, the way we see it.| 
+|Machine Learning API| Sklearn, Python, Librosa, Google Collab| We've developed an *MLPClassifier* from sklearn in python, that works on audio data which is normalised using Librosa. Our model has beentrained on Google Collab, and the data classifies the data into categories like angry, sad etc. We have an accuracy of ~75%|
 
 ## Team - Immortals
 
