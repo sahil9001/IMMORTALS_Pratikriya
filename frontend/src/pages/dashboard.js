@@ -19,7 +19,7 @@ const Dashboard = () => {
         <Box sx={{ maxWidth: "500px" }}>
           <AudioList setCaller={setCaller} />
         </Box>
-        <Box sx={{ marginRight: "700px", marginTop: "00px" }}>
+        <Box sx={{ marginRight: "500px", marginTop: "50px" , padding:"4rem", borderRadius: '15px', height:'450px', width:'400px',boxShadow: '0 5px 10px 0 rgba(0, 0, 0, 0.2)'}}>
           <p style={{ fontSize: "2rem" }}>Prediction Result:</p>{" "}
           {
             <Box>
