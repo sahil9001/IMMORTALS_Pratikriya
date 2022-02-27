@@ -1,12 +1,13 @@
 import React from 'react';
 import { Row, Col, Card, Table } from 'react-bootstrap';
 import callsList from './data';
-const AudioList = () => {
+const AudioList = (props) => {
 	return (
 		<React.Fragment>
+			<div sx={{marginLeft: '100px'}}>
 			<Row>
 				<Col md={6} xl={8}>
-					<Card className="Recent-Users">
+					<Card className="RecentUsers">
 						<Card.Header>
 							<Card.Title as="h5">Recent Users</Card.Title>
 						</Card.Header>
@@ -14,22 +15,22 @@ const AudioList = () => {
 							<Table responsive hover>
 								<tbody>
 									{callsList.map(function (object, i) {
-										return (<tr className="unread">
-											<td>
+										return (<tr className="unread" onClick={() => props.setId(object.id)}>
+											<td style={{verticalAlign:'middle'}}>
 												<img className="rounded-circle" style={{ width: '40px' }} src={`${object.imageIcon}`} alt="activity-user" />
 											</td>
-											<td>
+											<td style={{verticalAlign:'middle'}}>
 												<h6 className="mb-1">{object.fullName}</h6>
 												<p className="m-0">{object.location}</p>
 											</td>
-											<td>
+											<td style={{verticalAlign:'middle'}}>
 												<h6 className="text-muted">
 													<i className="fa fa-circle text-c-green f-10 m-r-15" />
 													{object.timeStamp}
 												</h6>
 											</td>
-											<td>
-												<a to="#" className="label theme-bg2 text-white f-12">
+											<td style={{verticalAlign:'middle'}}>
+												<a className="label theme-bg2 text-white f-12" style={{cursor:'pointer', borderRadius: '15px',  boxShadow: '0 5px 10px 0 rgba(0, 0, 0, 0.2)'}}>
 													Prediction Here
 												</a>
 											</td>
@@ -41,6 +42,7 @@ const AudioList = () => {
 					</Card>
 				</Col>
 			</Row >
+			</div>
 		</React.Fragment>
 	);
 }
@@ -48,25 +50,24 @@ const AudioList = () => {
 export default AudioList;
 
 // const styles = {
-// 	.Recent-Users,
-// .User-Lists {
-//     .table {
-//         tr {
-//             &:first-child {
-//                 td {
-//                     border-top: 0;
+// 	RecentUsers: {
+//     table: {
+//         tr: {
+//             '&:first-child': {
+//                 td: {
+//                     borderTop: 0
 //                 }
 //             }
-//         }
+//         },
 
-//         td {
-//             vertical-align: middle;
-//         }
+//         td:{
+//             verticalAlign: 'middle'
+//         },
 
-//         .label {
-//             border-radius: 15px;
-//             box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
-//         }
+//         label: {
+//             borderRadius: '15px',
+//             boxShadow: '0 5px 10px 0 rgba(0, 0, 0, 0.2)',
+//         },
 //     }
 // }
 // };
