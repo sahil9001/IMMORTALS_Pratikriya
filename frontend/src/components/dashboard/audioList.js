@@ -14,8 +14,8 @@ const AudioList = (props) => {
 						<Card.Body className="px-0 py-2">
 							<Table responsive hover>
 								<tbody>
-									{callsList.map(function (object, i) {
-										return (<tr className="unread" onClick={() => props.setId(object.id)}>
+									{callsList.map(function (object) {
+										return (<tr key={object.id} className="unread" onClick={() => props.setCaller(object)}>
 											<td style={{verticalAlign:'middle'}}>
 												<img className="rounded-circle" style={{ width: '40px' }} src={`${object.imageIcon}`} alt="activity-user" />
 											</td>
