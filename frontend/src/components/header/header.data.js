@@ -11,6 +11,10 @@ export default [
     path: 'team',
     label: 'Team',
   },
+  {
+    path: 'https://sakshi300699.github.io/MindSpace/',
+    label: 'MindSpace',
+  }
   // {
   //   path: 'pricing',
   //   label: 'Pricing',
