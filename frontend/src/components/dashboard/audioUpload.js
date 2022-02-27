@@ -28,7 +28,6 @@ const AudioUpload = () => {
       
     } else {
       a.pause();
-
       setButtonName("Play");
       setNum(false);
     }
