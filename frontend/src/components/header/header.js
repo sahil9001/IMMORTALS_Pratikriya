@@ -10,11 +10,15 @@ import { NavLink } from 'components/link';
 import menuItems from './header.data';
 import lock from 'assets/images/icons/lock.png';
 import logo from 'assets/images/logos/logo_black.png';
+import {useRouter} from 'next/router';
+import Link from 'next/link';
+
 export default function Header() {
   const [state, setState] = useState({
     isMobileMenu: false,
     isSticky: false,
   });
+  const router = useRouter();
   const handleCloseMenu = () => {
     setState({
       ...state,
@@ -56,10 +60,12 @@ export default function Header() {
                   </Box>
                 </Flex>
                 <Flex sx={styles.buttonGroup}>
-                  <button sx={styles.login}>
+                  <Link href="/login">
+                  <Button sx={styles.login}>
                     <Image src={lock} alt="lock icon" />
                     Login
-                  </button>
+                  </Button>
+                  </Link>
                   <Button variant="text" sx={styles.getStarted}>
                     Get Started
                   </Button>
