@@ -1,20 +1,15 @@
 import React, { useEffect, useState } from "react";
 import wave from "../../assets/audioWave/soundwave-900.gif";
-
-// import {useForm} from 'react-hook-form';
-
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 const AudioUpload = () => {
   const [buttonName, setButtonName] = useState("Play");
   const [num, setNum] = useState(false);
-
   const [audio, setAudio] = useState();
-
   var a;
-
   if (audio) {
     a = new Audio(audio);
   }
-
   const handleClick = () => {
     if (buttonName === "Play") {
       if (a) {
@@ -23,23 +18,39 @@ const AudioUpload = () => {
         setNum(true);
       }
       else {
-        alert("Please upload an audio file");
+        toast.warn('No Audio Selected!', {
+          position: "top-right",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
       }
-      
     } else {
       a.pause();
       setButtonName("Play");
       setNum(false);
     }
   };
-
   const addFile = (e) => {
     const s = URL.createObjectURL(e.target.files[0]);
-
     setAudio(s);
   };
   return (
     <div className="main1" style={{ display: "flex", flexDirection: "column" }}>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
       <div
         id="one"
         style={{
