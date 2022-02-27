@@ -5,6 +5,7 @@ import 'rc-tabs/assets/index.css';
 import 'swiper/swiper-bundle.css';
 import 'assets/css/login.css';
 import 'assets/css/audioUpload.css'
+import '../../src/styles.css'
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
