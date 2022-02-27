@@ -6,9 +6,6 @@ import "../components/dashboard/data.js";
 
 const Dashboard = () => {
   const [id, setId] = useState(null);
-  const setval = () => {
-    setId(id);
-  }
   return (
     <Box>
       <Flex
@@ -16,7 +13,7 @@ const Dashboard = () => {
         sx={{
           width: "100%",
           justifyContent: "space-between",
-          marginLeft: "100px",
+          marginLeft: "200px",
         }}
       >
         <Box sx={{ maxWidth: "500px" }}>
@@ -24,8 +21,8 @@ const Dashboard = () => {
         </Box>
         <Box sx={{ marginRight: "700px", marginTop: "200px" }}>
           Prediction Result: {
-            <Box>
-            {id? ("jello"):(id)}
+            <Box sx={{marginBottom:"100px"}}>
+            {id? (id):("jello")}
             </Box>
           }
         </Box>
