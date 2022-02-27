@@ -13,24 +13,84 @@ const Dashboard = () => {
         sx={{
           width: "100%",
           justifyContent: "space-between",
-          marginLeft: "100px",
+          marginLeft: "200px",
         }}
       >
         <Box sx={{ maxWidth: "500px" }}>
           <AudioList setCaller={setCaller} />
         </Box>
-        <Box sx={{ marginRight: "700px", marginTop: "200px" }}>
-          Prediction Result: {
+        <Box sx={{ marginRight: "700px", marginTop: "00px" }}>
+          <p style={{ fontSize: "2rem" }}>Prediction Result:</p>{" "}
+          {
             <Box>
-              {caller ? (<div>
-                <div className='label'>Caller Full Name : </div><div className='label-value'>{caller.fullName}</div>
-                <div className='label'>Phone Number :</div><div className='label-value'>{caller.phoneNumber}</div>
-                <div className='label'>Location :</div><div className='label-value'>{caller.location}</div>
-                <div className='label'>Call Time Stamp :</div><div className='label-value'>{caller.timeStamp}</div>
-                <div className='label'>Call Duration :</div><div className='label-value'>{caller.callDuration}</div>
-                <div className='label'>Call Purpose :</div><div className='label-value'>{caller.callPurpose}</div>
-                <div className='label'>Final Prediction :</div><div className='label-value'>{caller.prediction}</div>
-              </div>) : ("")}
+              {caller ? (
+                <div
+                  style={{
+                    display: "grid",
+                    gridTemplateColumn: "1fr 1fr",
+                    gridGap: "4px",
+                    gridTemplateAreas: `'name nameVal' 
+                'number numberVal' 'location locationVal' 'ts tsVal' 'duration durationVal' 'purpose purposeVal' 'fpred fpredVal'`,
+                  }}
+                >
+                  <div className="label" style={{ gridArea: "name" }}>
+                    <p>Caller Full Name : </p>
+                  </div>
+                  <div className="label-value" style={{ gridArea: "nameVal" }}>
+                    <p>{caller.fullName}</p>
+                  </div>
+                  <div className="label" style={{ gridArea: "number" }}>
+                    Phone Number :
+                  </div>
+                  <div
+                    className="label-value"
+                    style={{ gridArea: "numberVal" }}
+                  >
+                    {caller.phoneNumber}
+                  </div>
+                  <div className="label" style={{ gridArea: "location" }}>
+                    Location :
+                  </div>
+                  <div
+                    className="label-value"
+                    style={{ gridArea: "locationVal" }}
+                  >
+                    {caller.location}
+                  </div>
+                  <div className="label" style={{ gridArea: "ts" }}>
+                    Call Time Stamp :
+                  </div>
+                  <div className="label-value" style={{ gridArea: "tsVal" }}>
+                    {caller.timeStamp}
+                  </div>
+                  <div className="label" style={{ gridArea: "duration" }}>
+                    Call Duration :
+                  </div>
+                  <div
+                    className="label-value"
+                    style={{ gridArea: "durationVal" }}
+                  >
+                    {caller.callDuration}
+                  </div>
+                  <div className="label" style={{ gridArea: "purpose" }}>
+                    Call Purpose :
+                  </div>
+                  <div
+                    className="label-value"
+                    style={{ gridArea: "purposeVal" }}
+                  >
+                    {caller.callPurpose}
+                  </div>
+                  <div className="label" style={{ gridArea: "fpred" }}>
+                    Final Prediction :
+                  </div>
+                  <div className="label-value" style={{ gridArea: "fpredval" }}>
+                    {caller.prediction}
+                  </div>
+                </div>
+              ) : (
+                ""
+              )}
             </Box>
           }
         </Box>
